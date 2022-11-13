@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>NCC Project</title>
+</head>
+<body>
+    <div id="wrapper">
+         <!-- sideBar -->
+        <div id="sidebar">
+            <ul class="list-items">
+                <li class="item"><a class="link-item active" href="#">home</a></li>
+                <li class="item"><a class="link-item" href="#">services</a> </li>
+                <li class="item"><a class="link-item" href="#">news</a> </li>
+                <li class="item"><a class="link-item" href="#">blog</a> </li>
+                <li class="item"><a class="link-item" href="#">contact</a> </li>
+            </ul>
+            <span class="icon-close"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+        <div class="icon-responsive">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+        </div>
+        <!-- end sidebar -->
+        <!-- content -->
+        <div id="container">
+            <div id="logo">
+                <img width="310px" height="122px" src="images/logo-ncc.png" alt="">
+            </div>
+
+            <div id="content">
+                <div class="widget-content">
+                    <h2 class="title-widget">Lorem ipsum dolor sit asmet?</h2>
+                    <p class="desc-widget">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique consequat placerat.
+                        Vestibulum auctor pellentesque sem, eu posuere erat hendrerit quis. Maecenas vel consequat turpis. Nam facilisis, 
+                        ligula in mattis sodales, augue justo tristique nulla, sed lacinia ante eros ut mi. Morbi vitae diam augue.
+                        Aliquam vel mauris a nibh auctor commodo. Praesent et nisi eu justo eleifend convallis. Quisque suscipit maximus vestibulum. 
+                        Phasellus congue mollis orci, sit amet luctus augue tristique eu.
+                        Donec vulputate odio neque, sed semper turpis pellentesque a.
+                    </p>
+                </div>
+    
+                <div class="blocks-content">
+                    <div class="block-content">
+                        <h3 class="title-block__content">Lorem ipsum dolor sit asmet</h3>
+                        <div class="desc-block__content">
+                            <img src="images/css-icon.png" alt="">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non dui sodales, faucibus libero ut, posuere felis. 
+                               
+                            </p>
+                        </div>
+                        <p>
+                            ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est ullamcorper id.
+                            Aenean consequat condimentum velit ut tempor.
+                            Nam porta massa in metus bibendum congue.
+                            Pellentesque ultrices vestibulum mattis.
+                        </p>
+                    </div>
+                    <div class="block-content">
+                        <h3  class="title-block__content">Lorem ipsum dolor sit asmet</h3>
+                        <div class="desc-block__content">
+                            <img src="images/html-icon.png" alt="">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non dui sodales, faucibus libero ut, posuere felis. 
+                                
+                            </p>
+                        </div>
+                        <p>
+                            ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est ullamcorper id.
+                            Aenean consequat condimentum velit ut tempor.
+                            Nam porta massa in metus bibendum congue.
+                            Pellentesque ultrices vestibulum mattis.
+                        </p>
+                    </div>
+                    <div class="block-content">
+                        <h3  class="title-block__content">Lorem ipsum dolor sit asmet</h3>
+                        <div class="desc-block__content">
+                            <img src="images/url-icon.png" alt="">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non dui sodales, faucibus libero ut, posuere felis. 
+                            </p>
+                        </div>
+                        <p>
+                            ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est ullamcorper id.
+                            Aenean consequat condimentum velit ut tempor.
+                            Nam porta massa in metus bibendum congue.
+                            Pellentesque ultrices vestibulum mattis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer">
+                <p>Copyright @ 2021</p>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <script>
+        const btnResponsive = document.querySelector('.icon-responsive');
+        const sideBar = document.querySelector('#sidebar')
+        const btnClose = document.querySelector('.icon-close')
+
+        btnResponsive.addEventListener("click", () => {
+            sideBar.style.display = "block";
+            btnClose.style.display = "block";
+        })
+
+        btnClose.addEventListener("click", () => {
+            sideBar.style.display = "none";
+            btnClose.style.display = "none";
+        })
+
+    </script>
+</body>
+</html>
